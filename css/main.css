@@ -1,3 +1,29 @@
 /* ========================================
  * CSS written here will override Tachyons
  * ======================================== */
+
+
+/*This Animation is for the About.Html Page*/
+
+.mover-container {
+  width: 100%;
+  position: relative;
+  height: 4rem;
+}
+
+.mover {
+  position: absolute;
+  font-family: "helvetica", sans-serif;
+  left: 100%;
+  top: .75rem;
+  font-size: 2rem;
+  margin: 0;
+  animation-name: move-it;
+  animation-duration: 60s;  
+  animation-timing-function: linear;
+}
+
+@keyframes move-it {
+  0% { left: 0; }
+  100% { left: 100%; }
+}
