@@ -16,11 +16,13 @@
   font-family: "helvetica", sans-serif;
   left: 100%;
   top: .75rem;
-  font-size: 2rem;
+  font-size: 3rem;
+  font-family: sans-serif;
   margin: 0;
   animation-name: move-it;
-  animation-duration: 60s;  
+  animation-duration: 15s;  
   animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 @keyframes move-it {
