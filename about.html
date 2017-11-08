@@ -19,17 +19,27 @@
     <div class="flex sans-serif ba pa1 ml4 mt3 w-10">
         <a href="index.html">ANYA FASOLYAK</a>
     </div>
-    <div class="flex w-90 justify-end mr5 mt3 sans-serif">
-        <p>MENU</p>
+    <div class="flex w-90 justify-end mr5 mt4 pt1 sans-serif">
+        <a href="#" id="menu" onclick="toggleMenu()">MENU</a>
     </div>
 </div>
 
 <!-- Menu -->
-<div class="menu o-0 absolute z-1">
-    <h3>About</h3>
-    <h3>Portfolio</h3>
-    <h3>Writing Samples</h3>
-    <h3>Personal Manifesto</h3>
+<div class="absolute z-1 dn f1 sans-serif bg-white vh-100 w-100" id="links">
+   <div class="ml5">
+       <div class="mt6">
+            <li><a href="about.html">About</a></li>
+        </div>
+        <div>
+            <li><a href="portfolio.html">Portfolio</a></li>
+        </div>
+        <div>
+            <li><a href="writing.html">Writing Samples</a></li>
+        </div>
+        <div>
+            <li><a href="manifesto.html">Manifesto</a></li>
+        </div>
+    </div>
 </div>
 
 <!-- content -->
@@ -37,9 +47,14 @@
 <div class="w-50 sans-serif nt2 ml6 pl4 f4 fw6 nt3">
     <p>This is a paragraph about me. It'll contain some useful tidbits about how I'm a design student working towards my degree, how I'd love to get hired, and how I'm kind of fond of my work and I hope you'll be impressed by it. There might be some filler in here about my accomplishments (of which there are none, that I can think of). Hopefully there won't be any typos or anything but honestly who really knows, right?</p>
 </div>
-    <h1 class="sans-serif mt5 ml6 pl4">Skills</h1>
-<div class="flex items-baseline sans-serif w-100 nt3">
-    <div class="flex-column ml6 pl4 fw6">
+
+
+<div class="flex items-baseline">
+   <h1 class="sans-serif mt5 ml6 pl4">Skills</h1>  
+</div>
+<div class="flex items-baseline">   
+<div class="flex sans-serif w-100 nt3">
+     <div class="flex-column ml6 pl4 fw6">
         <p>Good Designer</p>
         <p>Good Person</p>
         <p>Illustrator</p>
@@ -59,9 +74,8 @@
     </div>
 </div>
  
-    <h3 class="sans-serif mt4 ml6 pl4">Additional</h3>
-<div class="flex items-baseline sans-serif w-100 nt3 o-0">
-    <div class="flex-column ml6 pl4">
+<div class="flex sans-serif w-100 fw6">
+    <div class="flex-column">
         <p>Good Designer</p>
         <p>Good Person</p>
         <p>Avid Pasta Eater</p>
@@ -70,7 +84,7 @@
         <p>Ferret Caretaker</p>
         <p>Dalias</p>
     </div>
-     <div class="flex-column ml5 pl4">
+     <div class="flex-column ml5 pl4 fw6">
         <p>Computer Lover</p>
         <p>Skill</p>
         <p>Skill</p>
@@ -80,11 +94,15 @@
         <p>Skill</p>
     </div>
 </div>
+
+</div>
  
 <!-- Scrolling Testimonials -->  
   
 <div class="mover-container">
-  <div class="mover">Fabulous Compliments</div>
+  <div class="mover">
+      <p>Fabulous Compliments</p>
+  </div>
 </div>
    
     

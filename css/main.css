@@ -8,16 +8,16 @@
 .mover-container {
   width: 100%;
   position: relative;
-  height: 4rem;
 }
 
 .mover {
   position: absolute;
+  overflow-x: hidden;
+  white-space: nowrap;
   font-family: "helvetica", sans-serif;
   left: 100%;
   top: .75rem;
-  font-size: 3rem;
-  font-family: sans-serif;
+  font-size: 5rem;
   margin: 0;
   animation-name: move-it;
   animation-duration: 15s;  
@@ -29,3 +29,152 @@
   0% { left: 0; }
   100% { left: 100%; }
 }
+
+/*For Future Reference*/
+/*@keyframes slideleft {
+    from {
+        background-position: 90000%;
+    }
+    
+    to {
+        background-position: 0%;
+    }
+}
+
+@-webkit-keyframes slideleft {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 90000%;
+    }
+}
+
+.mover {
+    background-image: url('http://static.communitytable.parade.com/wp-content/uploads/2014/06/dogs-in-world-cup-jerseys-ftr.jpg');
+    background-repeat: repeat-x;
+    animation: slideleft 4000s infinite linear;
+    -webkit-animation: slideleft 4000s infinite linear;
+    width: 100%;
+    height: 1200px;
+}*/
+
+
+/*Styles for List objects and links*/
+
+li {
+    list-style: none;
+    transition: all .2s;
+}
+
+a {
+    text-decoration: none;
+}
+#links {
+    font-size: 500%;
+}
+
+
+
+/*Portfolio Page Styles*/
+
+.title {
+    opacity: 0;
+    visibility: 0;
+}
+
+transition: { opacity 1s, visibility 1s;
+}
+
+.wrap:hover .title {
+    visibility: visible;
+    animation-name: fade;
+    animation-duration: 1s;
+    opacity: 1;
+    color: black;
+}
+
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/*Image Scroll Styles */
+
+
+.showSlide {  
+            display: none  
+        } 
+
+
+.left {  
+    opacity: 0;
+    cursor: pointer;
+    position: absolute; 
+    z-index: 1;
+     color: white; 
+    margin-top: 4em;
+    font-size: 3em;  
+    transition: 0.6s ease;  
+    border-radius: 0 3px 3px 0; 
+}
+  .right {
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    margin-top: 4em;
+    margin-left: 14em;
+    font-size: 3em; 
+    transition: 0.6s ease;
+    border-radius: 3px 0 0 3px;  
+}  
+
+.left:hover, .right:hover {  
+    opacity: 1;
+} 
+ 
+      
+.fade {  
+        -webkit-animation-name: scroll;  
+        -webkit-animation-duration: 1.5s;  
+        animation-name: scroll;  
+        animation-duration: 1s;  
+}  
+@-webkit-keyframes scroll {  
+    from {  
+            opacity: 0  
+    }  
+    to {  
+            opacity: 1  
+    }  
+}  
+
+@keyframes scroll {  
+    from {  
+         opacity: 0  
+    }  
+    to {  
+            opacity: 1  
+    }  
+}  
+
+
+
+
+
+
+
+
+
+
+

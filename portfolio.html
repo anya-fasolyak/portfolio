@@ -19,13 +19,13 @@
     <div class="flex sans-serif ba pa1 ml4 mt3 w-10">
         <a href="index.html">ANYA FASOLYAK</a>
     </div>
-    <div class="flex w-90 justify-end mr5 mt3 sans-serif">
-        <p>MENU</p>
+    <div class="flex w-90 justify-end mr5 mt4 pt1 sans-serif">
+        <a href="#" id="menu" onclick="toggleMenu()">MENU</a>
     </div>
 </div>
 
 <!-- Menu -->
-<div class="menu o-0 absolute z-1">
+<div class="absolute z-1 dn" id="links">
     <a href="about.html">About</a>
     <a href="portfolio.html">Portfolio</a>
     <a href="writing.html">Writing Samples</a>
@@ -36,9 +36,12 @@
  <h1 class="sans-serif mt5 ml6 pl4">Portfolio</h1>
 <div class="flex w-80 ml6 pl4">
     <div class="flex-column w-third">
-        <a href="item1.html">
-            <img class="dim" src="http://placecorgi.com/275/360"/>
-        </a>
+       <div class="wrap dim">
+           <h3 class="title absolute f2 sans-serif mt7 pt3 pl2">America<br> the Beautiful</h3>
+            <a href="item1.html">
+                <img src="http://placecorgi.com/275/360"/>
+            </a>
+        </div>
         <a href="item4.html">
             <img class="mt4 pt3 dim" src="http://placecorgi.com/275/360"/>
         </a>

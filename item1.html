@@ -19,13 +19,13 @@
     <div class="flex sans-serif ba pa1 ml4 mt3 w-10">
         <a href="index.html">ANYA FASOLYAK</a>
     </div>
-    <div class="flex w-90 justify-end mr5 mt3 sans-serif">
-        <p>MENU</p>
+    <div class="flex w-90 justify-end mr5 mt4 pt1 sans-serif">
+        <a href="#" id="menu" onclick="toggleMenu()">MENU</a>
     </div>
 </div>
 
 <!-- Menu -->
-<div class="menu o-0 absolute z-1">
+<div class="absolute z-1 dn" id="links">
     <a href="about.html">About</a>
     <a href="portfolio.html">Portfolio</a>
     <a href="writing.html">Writing Samples</a>
@@ -33,13 +33,30 @@
 </div>
 
 <!-- Content -->
+<div class="wrapper vh-100">
 <div class="sans-serif mt5 ml6 f3">
     <a class="sans-serif" href="portfolio.html">Portfolio</a>
 </div>
 
 <div class="flex items-end">
-    <div class="ml6 mt3">
+    <div class="slidercontainer ml6 mt3">
+      <a class="left arrow a-left" onclick="nextSlide(-1)">&#10094;</a>  
+       <a class="right arrow a-right" onclick="nextSlide(1)">&#10095;</a>
+       <div class="showSlide fade">
         <img src="http://placecorgi.com/700/450"/>
+       </div>
+       <div class="showSlide fade">
+        <img src="http://via.placeholder.com/700x450"/>
+       </div>
+       <div class="showSlide fade">
+        <img src="http://placecorgi.com/700/450"/>
+       </div>
+       <div class="showSlide fade">
+        <img src="http://placecorgi.com/700/450"/>
+       </div>
+       <div class="showSlide fade">
+        <img src="http://placecorgi.com/700/450"/>
+       </div>
     </div>
  <div class="sans-serif w-30 ml4 nb3">
         <h1>Project Name</h1>
@@ -47,6 +64,7 @@
     </div>
 </div>
  
+</div>
     
     <!-- Site JavaScript -->
     <script src="/javascript/toggleClass.js" charset="utf-8"></script>
