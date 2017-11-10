@@ -69,18 +69,40 @@ li {
 
 a {
     text-decoration: none;
+    color: #e7040f;
+    
 }
+
+a:hover {
+    color: white;
+    transition: 0.6s ease;
+    
+}
+
 #links {
     font-size: 500%;
+    line-height: 125%;
+
 }
 
+.logo {
+    max-width: 150px;
+}
 
+.pgwhite {
+    color: black;
+}
+.pgwhite:hover {
+    color: #ff4136;
+    transition: 0.6s ease;
+}
 
 /*Portfolio Page Styles*/
 
 .title {
     opacity: 0;
     visibility: 0;
+    z-index: 1;
 }
 
 transition: { opacity 1s, visibility 1s;
@@ -91,7 +113,8 @@ transition: { opacity 1s, visibility 1s;
     animation-name: fade;
     animation-duration: 1s;
     opacity: 1;
-    color: black;
+    color: white;
+    z-index: 1;
 }
 
 
@@ -116,18 +139,15 @@ transition: { opacity 1s, visibility 1s;
 
 
 .left {  
-    opacity: 0;
     cursor: pointer;
     position: absolute; 
     z-index: 1;
      color: white; 
     margin-top: 4em;
     font-size: 3em;  
-    transition: 0.6s ease;  
     border-radius: 0 3px 3px 0; 
 }
   .right {
-    opacity: 0;
     cursor: pointer;
     position: absolute;
     z-index: 1;
@@ -135,13 +155,22 @@ transition: { opacity 1s, visibility 1s;
     margin-top: 4em;
     margin-left: 14em;
     font-size: 3em; 
-    transition: 0.6s ease;
     border-radius: 3px 0 0 3px;  
 }  
 
-.left:hover, .right:hover {  
+.arrowcontainer {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    width: 700px;
+    height: 450px;
+    transition: 0.6s ease;
+}
+
+.arrowcontainer:hover {
     opacity: 1;
-} 
+}
+
  
       
 .fade {  
@@ -169,10 +198,19 @@ transition: { opacity 1s, visibility 1s;
 }  
 
 
+/*Styles for Manifesto Page*/
 
+.scroll {
+    height: 140vh;
+}
 
+.lastone {
+    height: 100vh;
+}
 
-
+.manilist {
+    font-size: 5em;
+}
 
 
 

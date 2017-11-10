@@ -15,44 +15,59 @@
     
 <!-- Header -->
     
+<div class="bg-red m0 vh-300">   
 <div class="flex">
-    <div class="flex sans-serif ba pa1 ml4 mt3 w-10">
+    <div class="flex sans-serif ba pa1 ml4 mt4 pt1 w-10">
         <a href="index.html">ANYA FASOLYAK</a>
     </div>
-    <div class="flex w-90 justify-end mr5 mt4 pt1 sans-serif">
+    <div class="flex w-90 justify-end mr5 mt4 pt1 sans-serif fw6">
         <a href="#" id="menu" onclick="toggleMenu()">MENU</a>
     </div>
 </div>
 
 <!-- Menu -->
-<div class="absolute z-1 dn" id="links">
-    <a href="about.html">About</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="writing.html">Writing Samples</a>
-    <a href="manifesto.html">Manifesto</a>
+<div class="absolute z-2 dn f1 sans-serif vh-100 w-100 bg-red" id="links">
+   <div class="ml5">
+       <div class="mt6 pt4">
+            <li><a href="about.html">About</a></li>
+        </div>
+        <div>
+            <li><a href="portfolio.html">Portfolio</a></li>
+        </div>
+        <div>
+            <li><a href="writing.html">Writing Samples</a></li>
+        </div>
+        <div>
+            <li><a href="manifesto.html">Manifesto</a></li>
+        </div>
+    </div>
 </div>
 
 <!-- Main + Photo Grid -->
- <h1 class="sans-serif mt5 ml6 pl4">Portfolio</h1>
+ <h1 class="sans-serif mt5 ml6 pl4 white">Portfolio</h1>
 <div class="flex w-80 ml6 pl4">
     <div class="flex-column w-third">
-       <div class="wrap dim">
-           <h3 class="title absolute f2 sans-serif mt7 pt3 pl2">America<br> the Beautiful</h3>
-            <a href="item1.html">
-                <img src="http://placecorgi.com/275/360"/>
+       <div class="wrap">
+           <h3 class="title absolute f2 sans-serif mt7 pt3 pl2 white">Catalogue<br> of Influences</h3>
+            <a href="item1.html" class="dim">
+                <img src="img/influences/catcover.jpg"/>
             </a>
         </div>
-        <a href="item4.html">
-            <img class="mt4 pt3 dim" src="http://placecorgi.com/275/360"/>
-        </a>
-        <a href="item7.html">
-            <img class="mt4 pt3 dim" src="http://placecorgi.com/275/360"/>
-        </a>
+            <a href="item4.html">
+                <img class="mt4 pt3 dim" src="http://placecorgi.com/275/360"/>
+            </a>
+            <a href="item7.html">
+                <img class="mt4 pt3 dim" src="http://placecorgi.com/275/360"/>
+            </a>
     </div>
-    <div class="flex-column w-third">
-       <a href="item2.html">
-            <img class="dim" src="http://placecorgi.com/275/360"/>
-        </a>
+    
+    <div class="flex-column w-third mb4">
+      <div class="wrap">
+          <h3 class="title absolute f2 sans-serif mt7 pt3 pl2 white">Futurist<br> Manifesto</h3>
+           <a href="item2.html" class="dim">
+                <img src="img/book/bookcover.jpg">
+            </a>
+        </div>
         <a href="item5.html">
             <img class="mt4 pt3 dim" src="http://placecorgi.com/275/360"/>
         </a>
@@ -60,13 +75,17 @@
             <img class="mt4 pt3 dim" src="http://placecorgi.com/275/360"/>
         </a>
     </div> 
+    
     <div class="flex-column w-third">
-       <a href="item3.html">
-            <img class="dim"src="http://placecorgi.com/275/360"/>
-        </a>
-        <a href="item6.html">
-            <img class="mt4 pt3 dim" src="http://placecorgi.com/275/360"/>
-        </a>
+      <div class="wrap">
+          <h3 class="title absolute f2 sans-serif mt7 pt5 pl2 white">Until it Did</h3>
+           <a href="item3.html" class="dim">
+                <img src="img/untilitdid.png"/>
+            </a>
+        </div>
+            <a href="item6.html">
+                <img class="mt4 pt3 dim" src="http://placecorgi.com/275/360"/>
+            </a>
     </div>     
 </div>
  
@@ -74,5 +93,6 @@
     <!-- Site JavaScript -->
     <script src="/javascript/toggleClass.js" charset="utf-8"></script>
     <script src="/javascript/main.js" charset="utf-8"></script>
+ </div>
   </body>
 </html>

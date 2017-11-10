@@ -14,53 +14,65 @@
   <body>
     
 <!-- Header -->
-    
+
 <div class="flex">
     <div class="flex sans-serif ba pa1 ml4 mt3 w-10">
         <a href="index.html">ANYA FASOLYAK</a>
     </div>
-    <div class="flex w-90 justify-end mr5 mt4 pt1 sans-serif">
-        <a href="#" id="menu" onclick="toggleMenu()">MENU</a>
+    <div class="flex w-90 justify-end mr5 mt4 pt1 sans-serif fw6 ">
+        <a href="#" id="menu" onclick="toggleMenu()" class="pgwhite">MENU</a>
     </div>
 </div>
 
 <!-- Menu -->
-<div class="absolute z-1 dn" id="links">
-    <a href="about.html">About</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="writing.html">Writing Samples</a>
-    <a href="manifesto.html">Manifesto</a>
+<div class="absolute z-1 dn f1 sans-serif bg-white vh-100 w-100" id="links">
+   <div class="ml5">
+       <div class="mt6 pt4">
+            <li><a href="about.html" class="pgwhite">About</a></li>
+        </div>
+        <div>
+            <li><a href="portfolio.html" class="pgwhite">Portfolio</a></li>
+        </div>
+        <div>
+            <li><a href="writing.html" class="pgwhite">Writing Samples</a></li>
+        </div>
+        <div>
+            <li><a href="manifesto.html" class="pgwhite">Manifesto</a></li>
+        </div>
+    </div>
 </div>
 
 <!-- Content -->
 <div class="wrapper vh-100">
 <div class="sans-serif mt5 ml6 f3">
-    <a class="sans-serif" href="portfolio.html">Portfolio</a>
+    <a class="sans-serif pgwhite fw7" href="portfolio.html">Portfolio</a>
 </div>
 
 <div class="flex items-end">
     <div class="slidercontainer ml6 mt3">
-      <a class="left arrow a-left" onclick="nextSlide(-1)">&#10094;</a>  
-       <a class="right arrow a-right" onclick="nextSlide(1)">&#10095;</a>
+         <div class="arrowcontainer">
+          <a class="left arrow a-left" onclick="nextSlide(-1)">&#10094;</a>  
+           <a class="right arrow a-right" onclick="nextSlide(1)">&#10095;</a>
+        </div>
        <div class="showSlide fade">
-        <img src="http://placecorgi.com/700/450"/>
+        <img src="img/influences/cat2.jpg"/>
        </div>
        <div class="showSlide fade">
-        <img src="http://via.placeholder.com/700x450"/>
+        <img src="img/influences/cat3.jpg"/>
        </div>
        <div class="showSlide fade">
-        <img src="http://placecorgi.com/700/450"/>
+        <img src="img/influences/cat4.jpg"/>
        </div>
        <div class="showSlide fade">
-        <img src="http://placecorgi.com/700/450"/>
+        <img src="img/influences/cat5.jpg"/>
        </div>
        <div class="showSlide fade">
-        <img src="http://placecorgi.com/700/450"/>
+        <img src="img/influences/cat6.jpg"/>
        </div>
     </div>
  <div class="sans-serif w-30 ml4 nb3">
-        <h1>Project Name</h1>
-        <p class="f4 fw6 nt3">This is a description of the project. It's really fantastic and I put a lot of effort into it. I would really appreciate you taking a look at it and seeing how it's applicable to this job application (because I promise, it is.)</p>
+        <h1 class="red">Catalogue of Influences</h1>
+        <p class="f5 fw5 nt3">This assignment asked us to catalogue our influences, first as images and later as ideas. I chose subculture culture as I find myself belonging to several subcultures in both Russian and American youth culture. The resulting publication is divided into three parts: trippy shit, Russian music culture, and vaporwave. The catalogue features collaged art from various artists and a different typographic treatment for each section.</p>
     </div>
 </div>
  
