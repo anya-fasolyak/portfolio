@@ -3,85 +3,55 @@
  * ======================================== */
 
 
-/*This Animation is for the About.Html Page*/
+/*/////// Styles for About.html Page ///////*/
 
-.mover-container {
-  width: 100%;
-  position: relative;
+#fader {
+    height: 100px;
 }
 
-.mover {
+
+section {
+    position: relative;
+    margin-top: -9em;
+}
+
+#fader a #arrow {
   position: absolute;
-  overflow-x: hidden;
-  white-space: nowrap;
-  font-family: "helvetica", sans-serif;
-  left: 100%;
-  top: .75rem;
-  font-size: 5rem;
-  margin: 0;
-  animation-name: move-it;
-  animation-duration: 15s;  
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 4px solid #ff4136;
+  border-bottom: 4px solid #ff4136;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
 }
 
-@keyframes move-it {
-  0% { left: 0; }
-  100% { left: 100%; }
-}
-
-/*For Future Reference*/
-/*@keyframes slideleft {
-    from {
-        background-position: 90000%;
-    }
-    
-    to {
-        background-position: 0%;
-    }
-}
-
-@-webkit-keyframes slideleft {
-    from {
-        background-position: 0%;
-    }
-    to {
-        background-position: 90000%;
-    }
-}
-
-.mover {
-    background-image: url('http://static.communitytable.parade.com/wp-content/uploads/2014/06/dogs-in-world-cup-jerseys-ftr.jpg');
-    background-repeat: repeat-x;
-    animation: slideleft 4000s infinite linear;
-    -webkit-animation: slideleft 4000s infinite linear;
-    width: 100%;
-    height: 1200px;
-}*/
-
-
-/*Styles for List objects and links*/
+/*/////// Styles for List objects and links ///////*/
 
 li {
     list-style: none;
-    transition: all .2s;
+/*    transition: all .2s;*/
 }
 
 a {
     text-decoration: none;
-    color: #e7040f;
+    color: white;
     
 }
 
 a:hover {
     color: white;
-    transition: 0.6s ease;
+/*    transition: 0.6s ease;*/
     
 }
 
 #links {
-    font-size: 500%;
-    line-height: 125%;
+    font-size: 300%;
+    line-height: 150%;
+    z-index: 2;
 
 }
 
@@ -89,130 +59,269 @@ a:hover {
     max-width: 150px;
 }
 
+
 .pgwhite {
     color: black;
 }
+
 .pgwhite:hover {
     color: #ff4136;
-    transition: 0.6s ease;
+/*    transition: 0.6s ease;*/
 }
 
-/*Portfolio Page Styles*/
-
-.title {
-    opacity: 0;
-    visibility: 0;
-    z-index: 1;
-}
-
-transition: { opacity 1s, visibility 1s;
-}
-
-.wrap:hover .title {
-    visibility: visible;
-    animation-name: fade;
-    animation-duration: 1s;
-    opacity: 1;
-    color: white;
-    z-index: 1;
+.active {
+    color: #ff4136;
 }
 
 
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
+/*/////// Portfolio Page Styles ///////*/
 
 
-  100% {
-    opacity: 1;
-  }
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: white;
+}
+
+.container:hover .overlay {
+  opacity: .9;
+}
+
+.text {
+  font-size: 30px;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*/////// Portfolio Item Styles ///////*/
+
+.blurb {
+    position: fixed;
+    margin-left: 57em;
+}
+
+.portfolio-object {
+    max-width: 800px;
+    margin-bottom: 2.5em;
+    display: block;
+}
+
+.portfolio-object-last {
+    margin-bottom: -2em;
 }
 
 
-/*Image Scroll Styles */
 
+/*///////// Media Queries: mobile /////////*/
 
-.showSlide {  
-            display: none  
-        } 
+@media all and (min-width: 300px) and (max-width: 736px){ 
 
-
-.left {  
-    cursor: pointer;
-    position: absolute; 
-    z-index: 1;
-     color: white; 
-    margin-top: 4em;
-    font-size: 3em;  
-    border-radius: 0 3px 3px 0; 
-}
-  .right {
-    cursor: pointer;
-    position: absolute;
-    z-index: 1;
-    color: white;
-    margin-top: 4em;
-    margin-left: 14em;
-    font-size: 3em; 
-    border-radius: 3px 0 0 3px;  
-}  
-
-.arrowcontainer {
-    position: absolute;
-    z-index: 1;
-    opacity: 0;
-    width: 700px;
-    height: 450px;
-    transition: 0.6s ease;
-}
-
-.arrowcontainer:hover {
-    opacity: 1;
+    #links {
+    font-size: 200%;
+    line-height: 150%;
+    z-index: 2;
+    }
+    
+     .carousel {
+        font-size: 1.7em;
+    }
+    
+    .txt-rotate{
+    }
+    
+    .about {
+        line-height: 150%;
+    }
+    
+    .blurb {
+        display: block;
+        position: relative;
+        width: 90%;
+        float: left;
+        margin-left: 2em;
+        padding-right: .5em;
+        margin-top: -6em;
+        padding-bottom: 2em;
+    }  
+    
+   
 }
 
- 
+/*Media Queries: mobile & tablet*/
+
+@media all and (min-width: 400px) and (max-width: 1050px){ 
+
+    .headline {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+     .blurb {
+        display: block;
+        position: relative;
+        width: 90%;
+        float: left;
+        margin-left: 2em;
+        padding-right: .5em;
+        margin-top: -6em;
+        padding-bottom: 2em;
+    } 
+  
+}
+
+/*Media Queries: tablet*/
+
+@media all and (min-width: 740px) and (max-width: 1050px){ 
+
+    .carousel {
+        font-size: 2em;
+    }
+    
+    .about {
+        line-height: 120%;
+    }
+    
+     .headline {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+         font-size: 2em;
+    }
       
-.fade {  
-        -webkit-animation-name: scroll;  
-        -webkit-animation-duration: 1.5s;  
-        animation-name: scroll;  
-        animation-duration: 1s;  
-}  
-@-webkit-keyframes scroll {  
-    from {  
-            opacity: 0  
-    }  
-    to {  
-            opacity: 1  
-    }  
-}  
+    .numblinks {
+        margin-left: 2em;
+    }
+   
+    .copy {
+        width: 75%;
+    } 
+    
+    .portfolio-object {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 800px;
+        display: block;
+    }
+    
+    
+    .blurb {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 50%;
+        display: block;
+        padding-top: 8em;
+    }
+    
 
-@keyframes scroll {  
-    from {  
-         opacity: 0  
-    }  
-    to {  
-            opacity: 1  
-    }  
-}  
-
-
-/*Styles for Manifesto Page*/
-
-.scroll {
-    height: 140vh;
-}
-
-.lastone {
-    height: 100vh;
-}
-
-.manilist {
-    font-size: 5em;
 }
 
 
+/*Media Queries: Desktop*/
 
+@media all and (min-width: 1900px) and (max-width: 2560px){ 
+
+    .logo {
+        margin-left: 3em;
+        margin-top: 1em;
+        font-size: 3em;
+    }
+    
+    #menu {
+        font-size: 1.8em;
+        margin-right: 3em;
+        margin-top: 1.8em;
+    }
+    
+    .headline {
+         font-size: 4em;
+    }
+    
+    #links {
+        font-size: 5em;
+    }
+    
+     .carousel {
+        font-size: 4em;
+    }
+    
+     .about {
+        line-height: 120%;
+         font-size: 30px;
+    }
+    
+    .about-header {
+        font-size: 3em;
+    }
+    
+      .numblinks {
+        margin-left: 12em;
+        margin-top: 2em;
+        font-size: 3em;
+    }
+   
+    .copy {
+        width: 50%;
+        margin-left: 6em;
+        margin-top: 3em;
+        font-size: 30px;
+        line-height: 40px;
+    } 
+    
+    .row1 {
+        margin-top: 5em;
+        max-width: 60%;
+    }
+    
+    .row2 {
+        padding-top: 2.5em;
+        max-width: 60%;
+    }
+    
+    .row3 {
+        padding-top: 2.5em;
+        max-width: 60%;
+    }
+    
+    .portfolio-object {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1300px;
+    }
+    
+    .blurb {
+        margin-left: 121em;
+        max-width: 20%;
+        margin-top: 31em;
+    }
+    
+    .blurb-copy {
+        font-size: 24px;
+        line-height: 130%;
+    }
+    
+    .blurb-title {
+        font-size: 35px;
+    }
+}
 
 
