@@ -171,7 +171,14 @@ a:hover {
     .post {
         margin-left: -4em;
     }
-
+    
+     #links {
+        padding-top: 2em;
+    }
+  
+    #menu {
+        padding-top: .5em;
+    }
 }
 
 /*Media Queries: mobile & tablet*/
@@ -204,7 +211,11 @@ a:hover {
         font-size: 20px;
         line-height: 25px;
     }
-  
+    
+     #links {
+        padding-top: 2em;
+    }
+    
 }
 
 /*Media Queries: tablet*/
