@@ -132,6 +132,15 @@ a:hover {
 
 /*///////// Media Queries: mobile /////////*/
 
+@media all and (min-width: 300px) and (max-width: 480px){ 
+
+    .headline {
+     margin-top: 6em; 
+        
+    }
+    
+}
+
 @media all and (min-width: 300px) and (max-width: 736px){ 
 
     
