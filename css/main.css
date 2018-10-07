@@ -194,6 +194,16 @@ a:hover {
         margin-top: -6em;
         padding-bottom: 2em;
     } 
+    
+    .first {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    
+    .post {
+        font-size: 20px;
+        line-height: 25px;
+    }
   
 }
 
