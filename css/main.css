@@ -159,7 +159,7 @@ a:hover {
         padding-bottom: 2em;
     }  
  
-
+   
     
     .portfolio-object {
         margin-left: auto;
@@ -168,6 +168,9 @@ a:hover {
         display: block;
     }
     
+    .post {
+        margin-left: -4em;
+    }
 
 }
 
