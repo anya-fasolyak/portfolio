@@ -142,9 +142,7 @@ a:hover {
     
      .carousel {
         font-size: 1.7em;
-    }
-    
-    .txt-rotate{
+        margin-top: 2em;
     }
     
     .about {
@@ -161,9 +159,7 @@ a:hover {
         padding-bottom: 2em;
     }  
  
-    #fader {
-        margin-top: 1em;
-    }
+
     
     .portfolio-object {
         margin-left: auto;
@@ -172,10 +168,7 @@ a:hover {
         display: block;
     }
     
-    .video {
-        margin-top: -6em;
-    }
-   
+
 }
 
 /*Media Queries: mobile & tablet*/
