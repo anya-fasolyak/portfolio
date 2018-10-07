@@ -48,6 +48,15 @@ a:hover {
     
 }
 
+.foliolink {
+    color: black;
+    font-weight: bold;
+}
+
+.foliolink:hover {
+    color: #ff4136;
+}
+
 #links {
     font-size: 300%;
     line-height: 150%;
@@ -128,7 +137,9 @@ a:hover {
     margin-bottom: -2em;
 }
 
-
+.info {
+    line-height: 20px;
+}
 
 /*///////// Media Queries: mobile /////////*/
 
