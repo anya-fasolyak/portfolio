@@ -137,6 +137,12 @@ a:hover {
     margin-bottom: -2em;
 }
 
+.infographic {
+    max-width: 500px;
+    margin-bottom: 2.5em;
+    display: block;
+}
+
 .info {
     line-height: 20px;
 }
