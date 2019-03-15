@@ -143,6 +143,12 @@ a:hover {
     display: block;
 }
 
+.landingpage {
+    max-width: 500px;
+    margin-bottom: 2.5em;
+    display: block;
+}
+
 .info {
     line-height: 20px;
 }
@@ -194,6 +200,19 @@ a:hover {
         max-width: 350px;
         display: block;
     }
+    
+    .infographic {
+    max-width: 300px;
+    margin-bottom: 2.5em;
+    display: block;
+}
+    
+    .landingpage {
+    max-width: 300px;
+    margin-bottom: 2.5em;
+    display: block;
+}
+
     
     .post {
         margin-left: -4em;
